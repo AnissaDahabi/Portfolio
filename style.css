@@ -1,0 +1,141 @@
+    * {
+        font-family: "JetBrains Mono", monospace;
+    }
+
+    body {
+        background: linear-gradient(rgba(173, 207, 255, 1), rgba(255, 255, 255, 1));
+        min-height: 100vh;
+        overflow: hidden; /* Hide scrollbars */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+
+    /* Main Window */
+
+    #mainWindow {
+        background: #FFFFFF;
+        height: 30em;
+        width: 55em;
+        display: grid;
+        border: solid 1px #1B1741;
+        border-radius: 1.5em;
+        box-sizing: inherit;
+        z-index: 1;
+        position: static;
+    }
+
+    #mainWindow #header {
+        background-color: #3D3A5B;
+        border-bottom: 1px solid #1B1741;
+        border-radius: 1.3em 1.3em 0 0;
+        height: 2.3em;
+    }
+
+    #header img{
+        height: 1em;
+        width: 1em;
+        margin-left: 1em;
+        margin-top: 0.6em;
+    }
+
+    #mainWindow h1 {
+        font-size : 2em;
+        text-align: center;
+        margin-bottom: -1em;
+    }
+
+    #mainWindow h2 {
+        font-size : 1.8em;
+        text-align: center;
+        color: #5D5985;
+        font-weight: bold;
+    }
+
+    #mainWindow p {
+        font-size : 1em;
+    }
+
+    #mainWindow h1, p {
+        color: #1B1741;
+        font-weight: bold;
+    }
+
+    #mainButtons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+
+    #mainButtons img {
+        width: 90px;
+    }
+
+    /* A Propos Window*/
+
+    #aProposWindow {
+        background: #FFF;
+        height: 28em;
+        width: 50em;
+        border: solid 1px #1B1741;
+        border-radius: 1.5em;
+        z-index: 3;
+        position: absolute;
+        box-sizing: border-box;
+    }
+
+    #aProposWindow .header {
+        background-color: #3D3A5B;
+        padding-top: 0.5em;
+        border-bottom: 1px solid #1B1741;
+        border-radius: 1.4em 1.4em 0 0;
+        height: 2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+
+    #aProposWindow .header p {
+        color: #FFF;
+        margin-left: 1em;
+    }
+
+    #aProposWindow .header img {
+        width: 2em;
+        margin-right: 1em;
+    }
+
+    /* Footer*/
+
+    footer {
+        background-color: #3D3A5B;
+        height: 2.5em;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 2;
+    }
+
+    footer p {
+        color: #FFFFFF;
+        font-size: 0.7em;
+        display: flex;
+        justify-content: center;
+        margin-top: 1.5em;
+    }
+
+    #bunny {
+        width: 8em;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        margin-right: 2em;
+    }
