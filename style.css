@@ -65,11 +65,16 @@
     #mainButtons {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-left: 4em;
+        margin-right: 4em;
+        justify-content: space-between;
     }
 
+    #mainButtons p {
+        text-align: center;
+        display: grid;
+        justify-content: space-around;
+    }
 
     #mainButtons img {
         width: 90px;
@@ -79,10 +84,14 @@
         -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
         transform: scale(1.2);
-        transition: 1s ease;
+        transition: 0.5s ease;
     }
 
-    /* A Propos Window*/
+    #mainButtons #expProImg {
+        margin-left: 1.7em;
+    }
+
+    /* A Propos Window */
 
     #aProposWindow {
         background: #FFF;
@@ -106,7 +115,7 @@
         justify-content: space-between;
         align-items: center;
         margin: 0;
-        cursor: move; /*move*/
+        cursor: grab; /*move*/
     }
 
     #aProposWindow .header p {
@@ -120,7 +129,159 @@
         cursor: auto;
     }
 
-    /* Footer*/
+    /* Mes Projets */
+
+    #projetsWindow {
+        background: #FFF;
+        height: 28em;
+        width: 50em;
+        border: solid 1px #1B1741;
+        border-radius: 1.5em;
+        z-index: 3;
+        position: absolute;
+        box-sizing: border-box;
+        display: none;
+    }
+
+    #projetsWindow .header {
+        background-color: #3D3A5B;
+        padding-top: 0.5em;
+        border-bottom: 1px solid #1B1741;
+        border-radius: 1.4em 1.4em 0 0;
+        height: 2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        cursor: grab; /*move*/
+    }
+
+    #projetsWindow .header p {
+        color: #FFF;
+        margin-left: 1em;
+    }
+
+    #projetsWindow .header img {
+        width: 2em;
+        margin-right: 1em;
+        cursor: auto;
+    }
+
+    /* Expériences Professionnelles */
+
+    #expProWindow {
+        background: #FFF;
+        height: 28em;
+        width: 50em;
+        border: solid 1px #1B1741;
+        border-radius: 1.5em;
+        z-index: 3;
+        position: absolute;
+        box-sizing: border-box;
+        display: none;
+    }
+
+    #expProWindow .header {
+        background-color: #3D3A5B;
+        padding-top: 0.5em;
+        border-bottom: 1px solid #1B1741;
+        border-radius: 1.4em 1.4em 0 0;
+        height: 2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        cursor: grab; /*move*/
+    }
+
+    #expProWindow .header p {
+        color: #FFF;
+        margin-left: 1em;
+    }
+
+    #expProWindow .header img {
+        width: 2em;
+        margin-right: 1em;
+        cursor: auto;
+    }
+
+    /* Liens */
+
+    #liensWindow {
+        background: #FFF;
+        height: 28em;
+        width: 50em;
+        border: solid 1px #1B1741;
+        border-radius: 1.5em;
+        z-index: 3;
+        position: absolute;
+        box-sizing: border-box;
+        display: none;
+    }
+
+    #liensWindow .header {
+        background-color: #3D3A5B;
+        padding-top: 0.5em;
+        border-bottom: 1px solid #1B1741;
+        border-radius: 1.4em 1.4em 0 0;
+        height: 2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        cursor: grab; /*move*/
+    }
+
+    #liensWindow .header p {
+        color: #FFF;
+        margin-left: 1em;
+    }
+
+    #liensWindow .header img {
+        width: 2em;
+        margin-right: 1em;
+        cursor: auto;
+    }
+
+    /* Contact */
+
+    #contactWindow {
+        background: #FFF;
+        height: 28em;
+        width: 50em;
+        border: solid 1px #1B1741;
+        border-radius: 1.5em;
+        z-index: 3;
+        position: absolute;
+        box-sizing: border-box;
+        display: none;
+    }
+
+    #contactWindow .header {
+        background-color: #3D3A5B;
+        padding-top: 0.5em;
+        border-bottom: 1px solid #1B1741;
+        border-radius: 1.4em 1.4em 0 0;
+        height: 2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        cursor: grab; /*move*/
+    }
+
+    #contactWindow .header p {
+        color: #FFF;
+        margin-left: 1em;
+    }
+
+    #contactWindow .header img {
+        width: 2em;
+        margin-right: 1em;
+        cursor: auto;
+    }
+
+    /* Footer */
 
     footer {
         background-color: #3D3A5B;

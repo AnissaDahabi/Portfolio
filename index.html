@@ -28,22 +28,22 @@
       </div>
 
       <div>
-          <img src="/images/expPro.png" alt="Expériences professionnelles">
-          <p>Expériences<br>professionnelles</p>
-      </div>
-
-      <div>
-        <img src="/images/dossier1.png" alt="Mes projets">
+        <img onclick="openWindowProjets()" src="/images/dossier1.png" alt="Mes projets">
         <p>Mes projets</p>
       </div>
 
       <div>
-        <img src="/images/liens.png" alt="Liens">
+        <img onclick="openWindowExpPro()" src="/images/expPro.png" alt="Expériences professionnelles" id="expProImg">
+        <p>Expériences<br>professionnelles</p>
+      </div>
+
+      <div>
+        <img onclick="openWindowLiens()" src="/images/liens.png" alt="Liens">
         <p>Liens</p>
       </div>
 
       <div>
-        <img src="/images/contact.png" alt="Contact">
+        <img onclick="openWindowContact()" src="/images/contact.png" alt="Contact">
         <p>Contact</p>
       </div>
     </div>
@@ -54,6 +54,42 @@
       <div class="header">
         <p>A propos</p>
         <img onclick="closeWindowAPropos()" src="/images/closeButton.png" alt="Close Button">
+      </div>
+
+  </div>
+
+  <div id="projetsWindow">
+
+      <div class="header">
+          <p>Mes projets</p>
+          <img onclick="closeWindowProjets()" src="/images/closeButton.png" alt="Close Button">
+      </div>
+
+  </div>
+
+  <div id="expProWindow">
+
+      <div class="header">
+          <p>Expériences Professionnelles</p>
+          <img onclick="closeWindowExpPro()" src="/images/closeButton.png" alt="Close Button">
+      </div>
+
+  </div>
+
+  <div id="liensWindow">
+
+      <div class="header">
+          <p>Liens utiles</p>
+          <img onclick="closeWindowLiens()" src="/images/closeButton.png" alt="Close Button">
+      </div>
+
+  </div>
+
+  <div id="contactWindow">
+
+      <div class="header">
+          <p>Contact</p>
+          <img onclick="closeWindowContact()" src="/images/closeButton.png" alt="Close Button">
       </div>
 
   </div>
