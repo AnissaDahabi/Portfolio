@@ -77,7 +77,7 @@
     }
 
     #mainButtons img {
-        width: 90px;
+        width: 6.5em;
     }
 
     #mainButtons img:hover {
@@ -88,7 +88,7 @@
     }
 
     #mainButtons #expProImg {
-        margin-left: 1.7em;
+        margin-left: 1.5em;
     }
 
     /* A Propos Window */
