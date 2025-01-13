@@ -2,11 +2,11 @@
 /* A propos */
 
 function openWindowAPropos() {
-    let a = document.getElementById("aProposWindow");
-    if (a.style.display === "none") {
-        a.style.display = "block";
+    let o = document.getElementById("aProposWindow");
+    if (o.style.display === "none") {
+        o.style.display = "block";
     } else {
-        a.style.display = "none";
+        o.style.display = "none";
     }
 }
 
@@ -22,11 +22,11 @@ function closeWindowAPropos() {
 /* Expériences professionnelles */
 
 function openWindowExpPro() {
-    let a = document.getElementById("expProWindow");
-    if (a.style.display === "none") {
-        a.style.display = "block";
+    let o = document.getElementById("expProWindow");
+    if (o.style.display === "none") {
+        o.style.display = "block";
     } else {
-        a.style.display = "none";
+        o.style.display = "none";
     }
 }
 
@@ -42,11 +42,11 @@ function closeWindowExpPro() {
 /* Mes Projets */
 
 function openWindowProjets() {
-    let a = document.getElementById("projetsWindow");
-    if (a.style.display === "none") {
-        a.style.display = "block";
+    let o = document.getElementById("projetsWindow");
+    if (o.style.display === "none") {
+        o.style.display = "block";
     } else {
-        a.style.display = "none";
+        o.style.display = "none";
     }
 }
 
@@ -62,11 +62,11 @@ function closeWindowProjets() {
 /* Liens */
 
 function openWindowLiens() {
-    let a = document.getElementById("liensWindow");
-    if (a.style.display === "none") {
-        a.style.display = "block";
+    let o = document.getElementById("liensWindow");
+    if (o.style.display === "none") {
+        o.style.display = "block";
     } else {
-        a.style.display = "none";
+        o.style.display = "none";
     }
 }
 
@@ -82,11 +82,11 @@ function closeWindowLiens() {
 /* Contact */
 
 function openWindowContact() {
-    let a = document.getElementById("contactWindow");
-    if (a.style.display === "none") {
-        a.style.display = "block";
+    let o = document.getElementById("contactWindow");
+    if (o.style.display === "none") {
+        o.style.display = "block";
     } else {
-        a.style.display = "none";
+        o.style.display = "none";
     }
 }
 
