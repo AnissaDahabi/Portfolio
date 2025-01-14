@@ -128,6 +128,26 @@ document.addEventListener('mousemove', (e) => {
     mouseX = e.clientX + offsetX;
     mouseY = e.clientY + offsetY;
 
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+
+    const windowWidth = currentWindow.offsetWidth;
+    const windowHeight = currentWindow.offsetHeight;
+
+    if (mouseX < 0) {
+        mouseX = 0;
+    }
+    if (mouseX + windowWidth > screenWidth) {
+        mouseX = screenWidth - windowWidth;
+    }
+
+    if (mouseY < 0) {
+        mouseY = 0;
+    }
+    if (mouseY + windowHeight > screenHeight) {
+        mouseY = screenHeight - windowHeight;
+    }
+
     currentWindow.style.left = mouseX + 'px';
     currentWindow.style.top = mouseY + 'px';
 });
