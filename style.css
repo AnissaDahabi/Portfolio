@@ -4,9 +4,9 @@
 
     body {
         //*background: linear-gradient(#F1DCFC, #FCF1FF);*/
-        background-color: #ffe2ef;
+        background-color: ##fff0f3;
         background-opacity: 0.7;
-        background-image:  linear-gradient(#ffffff 2px, transparent 2px), linear-gradient(to right, #ffffff 2px, #ffe2ef 2px);
+        background-image:  linear-gradient(#ffffff 2px, transparent 2px), linear-gradient(to right, #ffffff 2px, ##fff0f3 2px);
         background-size: 40px 40px;
         min-height: 100vh;
         overflow: hidden; /* Hide scrollbars */
