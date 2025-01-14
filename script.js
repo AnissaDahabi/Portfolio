@@ -98,3 +98,41 @@ function closeWindowContact() {
         c.style.display = "block";
     }
 }
+
+/* Bouger les fenêtres */
+
+const draggableWindows = document.querySelectorAll('.draggableWindow');
+
+
+let offsetX = 0;
+let offsetY = 0;
+let mouseX = 0;
+let mouseY = 0;
+let isMouseDown = false;
+let currentWindow = null;
+
+draggableWindows.forEach((draggableWindow) => {
+    draggableWindow.addEventListener('mousedown', (e) => {
+        isMouseDown = true;
+        currentWindow = draggableWindow;
+
+        offsetX = currentWindow.offsetLeft - e.clientX;
+        offsetY = currentWindow.offsetTop - e.clientY;
+    });
+});
+
+document.addEventListener('mousemove', (e) => {
+    if (!isMouseDown || !currentWindow) return;
+    e.preventDefault();
+
+    mouseX = e.clientX + offsetX;
+    mouseY = e.clientY + offsetY;
+
+    currentWindow.style.left = mouseX + 'px';
+    currentWindow.style.top = mouseY + 'px';
+});
+
+document.addEventListener('mouseup', (e) => {
+    isMouseDown = false;
+    currentWindow = null;
+});
