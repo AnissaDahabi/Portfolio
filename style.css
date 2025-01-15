@@ -223,8 +223,8 @@
 
     #liensWindow {
         background: #FFF;
-        height: 20em;
-        width: 42em;
+        height: 25vh;
+        width: 38vh;
         border: solid 1px #1B1741;
         border-radius: 1.5em;
         z-index: 3;
@@ -259,6 +259,31 @@
         margin-right: 1em;
         cursor: auto;
     }
+
+    #liensWindow #liensMainWindow {
+        display: flex;
+        justify-content: space-between; /* Espace les deux conteneurs */
+    }
+
+    #liensWindow #linkedin, #github {
+        display: flex;
+        flex-direction: column; /* Affiche les images verticalement */
+        align-items: center;
+        margin: 4vh;
+    }
+
+    #liensWindow img {
+        width: 3vw;
+    }
+
+    /*#liensWindow #liensTexte {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+    }*/
+
+
 
     /* Contact */
 
