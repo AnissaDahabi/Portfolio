@@ -223,8 +223,8 @@
 
     #liensWindow {
         background: #FFF;
-        height: 25vh;
-        width: 38vh;
+        height: 15em;
+        width: 22em;
         border: solid 1px #1B1741;
         border-radius: 1.5em;
         z-index: 3;
@@ -269,11 +269,11 @@
         display: flex;
         flex-direction: column; /* Affiche les images verticalement */
         align-items: center;
-        margin: 4vh;
+        margin: 2em;
     }
 
     #liensWindow img {
-        width: 3vw;
+        width: 4em;
     }
 
     /*#liensWindow #liensTexte {
