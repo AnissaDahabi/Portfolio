@@ -4,7 +4,7 @@
 
     body {
         //*background: linear-gradient(#F1DCFC, #FCF1FF);*/
-        background-color: ##fff0f3;
+        background-color: #fff0f3;
         background-opacity: 0.7;
         background-image:  linear-gradient(#ffffff 2px, transparent 2px), linear-gradient(to right, #ffffff 2px, #fff0f3 2px);
         background-size: 40px 40px;
@@ -19,7 +19,7 @@
     /* Main Window */
 
     #mainWindow {
-        background: #FFFFFF;
+        background-color: #FFFFFF;
         height: 30em;
         width: 55em;
         display: grid;
@@ -99,7 +99,7 @@
     /* A Propos Window */
 
     #aProposWindow {
-        background: #FFF;
+        background-color: #FFF;
         height: 28em;
         width: 50em;
         border: solid 1px #1B1741;
@@ -140,7 +140,7 @@
     /* Mes Projets */
 
     #projetsWindow {
-        background: #FFF;
+        background-color: #FFF;
         height: 30em;
         width: 52em;
         border: solid 1px #1B1741;
@@ -181,7 +181,7 @@
     /* Expériences Professionnelles */
 
     #expProWindow {
-        background: #FFF;
+        background-color: #FFF;
         height: 28em;
         width: 50em;
         border: solid 1px #1B1741;
@@ -219,10 +219,15 @@
         cursor: auto;
     }
 
+    #expProWindow .expProMainFrame h3, p {
+        background: #FFF;
+        color: #1B1741;
+    }
+
     /* Liens */
 
     #liensWindow {
-        background: #FFF;
+        background-color: #FFF;
         height: 15em;
         width: 22em;
         border: solid 1px #1B1741;
@@ -260,7 +265,7 @@
         cursor: auto;
     }
 
-    #liensWindow #liensMainWindow {
+    #liensWindow #liensMainFrame {
         display: flex;
         justify-content: space-between; /* Espace les deux conteneurs */
     }
@@ -276,19 +281,10 @@
         width: 4em;
     }
 
-    /*#liensWindow #liensTexte {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-items: center;
-    }*/
-
-
-
     /* Contact */
 
     #contactWindow {
-        background: #FFF;
+        background-color: #FFF;
         height: 24em;
         width: 46em;
         border: solid 1px #1B1741;
