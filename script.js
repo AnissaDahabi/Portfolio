@@ -156,3 +156,4 @@ document.addEventListener('mouseup', (e) => {
     isMouseDown = false;
     currentWindow = null;
 });
+

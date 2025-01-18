@@ -3,13 +3,12 @@
     }
 
     body {
-        //*background: linear-gradient(#F1DCFC, #FCF1FF);*/
         background-color: #fff0f3;
         background-opacity: 0.7;
         background-image:  linear-gradient(#ffffff 2px, transparent 2px), linear-gradient(to right, #ffffff 2px, #fff0f3 2px);
         background-size: 40px 40px;
         min-height: 100vh;
-        overflow: hidden; /* Hide scrollbars */
+        overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -123,7 +122,7 @@
         justify-content: space-between;
         align-items: center;
         margin: 0;
-        cursor: grab; /*move*/
+        cursor: grab;
     }
 
     #aProposWindow .header p {
@@ -164,7 +163,7 @@
         justify-content: space-between;
         align-items: center;
         margin: 0;
-        cursor: grab; /*move*/
+        cursor: grab;
     }
 
     #projetsWindow .header p {
@@ -205,7 +204,7 @@
         justify-content: space-between;
         align-items: center;
         margin: 0;
-        cursor: grab; /*move*/
+        cursor: grab;
     }
 
     #expProWindow .header p {
@@ -219,9 +218,40 @@
         cursor: auto;
     }
 
-    #expProWindow .expProMainFrame h3, p {
-        background: #FFF;
+    #expProWindow #expProMainFrame {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        max-width: 100%;
+        max-height: 24.5em;
+        overflow: auto;
+        padding: 1em;
+        box-sizing: border-box;
+    }
+
+    #expProWindow #expProMainFrame .content {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.5em;
+        box-sizing: border-box;
+    }
+
+    #expProWindow #expProMainFrame #divCorumTxt, #divOgataTxt, #divInalcoTxt {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow-wrap: break-word;
+    }
+
+    #expProWindow #expProMainFrame p, h3, h4, ul{
         color: #1B1741;
+        z-index: 4;
+        margin: 0.5em 0;
+    }
+
+    #expProWindow #expProMainFrame .content img{
+        width: 8em;
+        padding: 1em;
     }
 
     /* Liens */
@@ -251,7 +281,7 @@
         justify-content: space-between;
         align-items: center;
         margin: 0;
-        cursor: grab; /*move*/
+        cursor: grab;
     }
 
     #liensWindow .header p {
@@ -267,12 +297,12 @@
 
     #liensWindow #liensMainFrame {
         display: flex;
-        justify-content: space-between; /* Espace les deux conteneurs */
+        justify-content: space-between;
     }
 
     #liensWindow #linkedin, #github {
         display: flex;
-        flex-direction: column; /* Affiche les images verticalement */
+        flex-direction: column;
         align-items: center;
         margin: 2.1em;
     }
@@ -308,7 +338,7 @@
         justify-content: space-between;
         align-items: center;
         margin: 0;
-        cursor: grab; /*move*/
+        cursor: grab;
     }
 
     #contactWindow .header p {
@@ -320,6 +350,12 @@
         width: 2em;
         margin-right: 1em;
         cursor: auto;
+    }
+
+    #contactWindow #contactMainFrame p {
+        display: flex;
+        margin-left: 2em;
+        margin-top: 2em;
     }
 
     /* Footer */
