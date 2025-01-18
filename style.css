@@ -155,7 +155,7 @@
         gap: 2em;
     }
 
-    #aProposWindow #aProposMainFrame #bunnyPfp img {
+    #aProposWindow #aProposMainFrame #aPropos1stPart #bunnyPfp img {
         justify-content: start;
         height: 10em;
     }
