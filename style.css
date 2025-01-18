@@ -19,8 +19,8 @@
 
     #mainWindow {
         background-color: #FFFFFF;
-        height: 30em;
-        width: 55em;
+        height: 28em;
+        width: 53em;
         display: grid;
         border: solid 1px #1B1741;
         border-radius: 1.5em;
@@ -177,11 +177,9 @@
     #aProposWindow #aProposMainFrame h4 {
         color: #1B1741;
         font-weight: bold;
-        margin-top: -1em;
-        margin-bottom: -1em;
     }
 
-    #aProposWindow #aProposMainFrame #logos img {
+    #aProposWindow #aProposMainFrame .logos img {
         height: 3.5em;
     }
 
@@ -226,13 +224,10 @@
         cursor: auto;
     }
 
-    #projetsWindow #projetsMainFrame {
-        margin-left: 1.5em;
-        z-index: 4;
-    }
-
-    #projetsWindow #projetsMainFrame #logos {
+    #projetsWindow #projetsMainFrame p {
         display: flex;
+        margin-left: 2em;
+        margin-top: 2em;
     }
 
 
