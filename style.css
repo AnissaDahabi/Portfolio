@@ -136,6 +136,55 @@
         cursor: auto;
     }
 
+    #aProposWindow #aProposMainFrame {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        max-width: 100%;
+        max-height: 24em;
+        overflow: auto;
+        padding: 1em;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+    }
+
+    #aProposWindow #aProposMainFrame #aPropos1stPart {
+        margin-top: 2em;
+        display: flex;
+        align-items: center;
+        gap: 2em;
+    }
+
+    #aProposWindow #aProposMainFrame #bunnyPfp img {
+        justify-content: start;
+        height: 10em;
+    }
+
+    #aProposWindow #aProposMainFrame #aProposTxt1 {
+        justify-content: end;
+        flex: 1;
+    }
+
+    #aProposWindow #aProposMainFrame #aProposTxt1 span {
+        color: #856ABD;
+        font-weight: bolder;
+    }
+
+    #aProposWindow #aProposMainFrame #aProposTxt2 {
+        margin-top: -1em;
+    }
+
+    #aProposWindow #aProposMainFrame h4 {
+        color: #1B1741;
+        font-weight: bold;
+        margin-top: -1em;
+        margin-bottom: -1em;
+    }
+
+    #aProposWindow #aProposMainFrame #logos img {
+        height: 3.5em;
+    }
+
     /* Mes Projets */
 
     #projetsWindow {
@@ -176,6 +225,16 @@
         margin-right: 1em;
         cursor: auto;
     }
+
+    #projetsWindow #projetsMainFrame {
+        margin-left: 1.5em;
+        z-index: 4;
+    }
+
+    #projetsWindow #projetsMainFrame #logos {
+        display: flex;
+    }
+
 
     /* Expériences Professionnelles */
 
