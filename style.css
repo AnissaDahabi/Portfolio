@@ -230,10 +230,51 @@
         cursor: auto;
     }
 
-    #projetsWindow #projetsMainFrame p {
+    #projetsWindow #projetsMainFrame {
         display: flex;
+        flex-direction: row;
+        gap: 2em;
+        max-width: 100%;
+        max-height: 24.5em;
+        overflow: auto;
+        padding: 1em;
+        box-sizing: border-box;
+    }
+
+    #projetsWindow #projetsMainFrame a {
+        color: #856ABD;
+        font-weight: bolder;
+    }
+
+    #projetsWindow #projetsMainFrame a:hover {
+        opacity: 0.7;
+    }
+
+    #projetsWindow #projetsMainFrame #projet1 {
+        width: 45%;
+        border: solid 4px #EBE4F2;
+        border-radius: 1.5em;
+        padding: 1em;
+    }
+
+    #projetsWindow #projetsMainFrame #projet2 {
+        width: 45%;
+        border: solid 4px #EBE4F2;
+        border-radius: 1.5em;
+        padding: 1em;
+    }
+
+    #projetsWindow #projetsMainFrame img {
+        height: 4em;
+    }
+
+    #projetsWindow #phrasedefin a {
+        justify-self: start;
         margin-left: 2em;
-        margin-top: 2em;
+    }
+
+    #projetsWindow #phrasedefin a:hover {
+        opacity: 0.7;
     }
 
 
