@@ -22,8 +22,8 @@
 
     #mainWindow {
         background-color: #FFFFFF;
-        height: 28em;
-        width: 53em;
+        height: 26em;
+        width: 51em;
         display: grid;
         border: solid 1px #1B1741;
         border-radius: 1.5em;
@@ -445,4 +445,11 @@
         right: 0;
         z-index: 2;
         margin-right: 2em;
+    }
+
+    #bunny:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: 0.5s ease;
     }

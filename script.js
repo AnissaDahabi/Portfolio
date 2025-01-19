@@ -157,3 +157,13 @@ document.addEventListener('mouseup', (e) => {
     currentWindow = null;
 });
 
+//Boutons audio
+
+const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/2882");
+const buttons = document.querySelectorAll(".button");
+
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        audio.play();
+    });
+});
