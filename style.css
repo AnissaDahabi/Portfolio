@@ -443,6 +443,6 @@
         position: fixed;
         bottom: 1.5em;
         right: 0;
-        z-index: 4;
+        z-index: 2;
         margin-right: 2em;
     }
