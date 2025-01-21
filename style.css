@@ -494,3 +494,31 @@
         transform: scale(1.1);
         transition: 0.5s ease;
     }
+
+    .scrollbar {
+        height: 300px;
+        width: 50%;
+        overflow: auto;
+        padding: 0 10px;
+    }
+    /*       ScrollBar 1        */
+
+    .scrollbar1::-webkit-scrollbar {
+        width: 16px;
+    }
+
+    .scrollbar1::-webkit-scrollbar-track {
+        margin-top: 5px;
+        margin-right: 5px;
+        border-radius: 8px;
+        background-color: #e7e7e7;
+        border: 1px solid #cacaca;
+    }
+
+    .scrollbar1::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        border: 3px solid transparent;
+        background-clip: content-box;
+        background-color: #B3A0D8;
+    }
+
