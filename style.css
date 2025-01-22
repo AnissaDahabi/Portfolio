@@ -193,8 +193,8 @@
 
     #projetsWindow {
         background-color: #FFF;
-        height: 30em;
-        width: 52em;
+        height: 28.5em;
+        width: 50em;
         border: solid 1px #1B1741;
         border-radius: 1.5em;
         z-index: 3;
@@ -232,8 +232,8 @@
 
     #projetsWindow #projetsMainFrame {
         display: flex;
-        flex-direction: row;
-        gap: 2em;
+        flex-wrap: wrap;
+        gap: 1em;
         max-width: 100%;
         max-height: 24.5em;
         overflow: auto;
@@ -250,15 +250,14 @@
         opacity: 0.7;
     }
 
-    #projetsWindow #projetsMainFrame #projet1 {
-        width: 45%;
+    #projetsWindow #projetsMainFrame #projet1,
+    #projetsWindow #projetsMainFrame #projet2 {
+        flex: 1 1 45%;
         border: solid 4px #EBE4F2;
         border-radius: 1.5em;
-        padding: 1em;
+        padding: 0.5em;
     }
-
-    #projetsWindow #projetsMainFrame #projet2 {
-        width: 45%;
+     #projetsWindow #projetsMainFrame #projet3{
         border: solid 4px #EBE4F2;
         border-radius: 1.5em;
         padding: 1em;
@@ -268,9 +267,13 @@
         height: 4em;
     }
 
+    #projetsWindow #projetsMainFrame p {
+        font-weight: normal;
+    }
+
     #projetsWindow #phrasedefin a {
-        justify-self: start;
-        margin-left: 2em;
+        margin-top: 2em;
+
     }
 
     #projetsWindow #phrasedefin a:hover {
