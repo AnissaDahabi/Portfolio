@@ -257,10 +257,12 @@
         border-radius: 1.5em;
         padding: 0.5em;
     }
-     #projetsWindow #projetsMainFrame #projet3{
-        border: solid 4px #EBE4F2;
-        border-radius: 1.5em;
-        padding: 1em;
+     #projetsWindow #projetsMainFrame #projet3,
+     #projetsWindow #projetsMainFrame #projet4{
+         flex: 1 1 45%;
+         border: solid 4px #EBE4F2;
+         border-radius: 1.5em;
+         padding: 0.5em;
     }
 
     #projetsWindow #projetsMainFrame img {
