@@ -193,7 +193,7 @@
 
     #projetsWindow {
         background-color: #FFF;
-        height: 28.5em;
+        height: 32em;
         width: 50em;
         border: solid 1px #1B1741;
         border-radius: 1.5em;
@@ -235,7 +235,7 @@
         flex-wrap: wrap;
         gap: 1em;
         max-width: 100%;
-        max-height: 24.5em;
+        max-height: 28em;
         overflow: auto;
         padding: 1em;
         box-sizing: border-box;
