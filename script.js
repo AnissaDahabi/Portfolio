@@ -19,10 +19,10 @@ function closeWindowAPropos() {
     }
 }
 
-/* Expériences professionnelles */
+/* Epreuve 4 */
 
-function openWindowExpPro() {
-    let o = document.getElementById("expProWindow");
+function openWindowEpreuve4() {
+    let o = document.getElementById("epreuve4Window");
     if (o.style.display === "none") {
         o.style.display = "block";
     } else {
@@ -30,8 +30,28 @@ function openWindowExpPro() {
     }
 }
 
-function closeWindowExpPro() {
-    let c = document.getElementById("expProWindow");
+function closeWindowEpreuve4() {
+    let c = document.getElementById("epreuve4Window");
+    if (c.style.display === "block") {
+        c.style.display = "none";
+    } else {
+        c.style.display = "block";
+    }
+}
+
+/* Epreuve 5 */
+
+function openWindowEpreuve5() {
+    let o = document.getElementById("epreuve5Window");
+    if (o.style.display === "none") {
+        o.style.display = "block";
+    } else {
+        o.style.display = "none";
+    }
+}
+
+function closeWindowEpreuve5() {
+    let c = document.getElementById("epreuve5Window");
     if (c.style.display === "block") {
         c.style.display = "none";
     } else {
@@ -41,8 +61,8 @@ function closeWindowExpPro() {
 
 /* Mes Projets */
 
-function openWindowProjets() {
-    let o = document.getElementById("projetsWindow");
+function openWindowBts() {
+    let o = document.getElementById("btsWindow");
     if (o.style.display === "none") {
         o.style.display = "block";
     } else {
@@ -50,8 +70,8 @@ function openWindowProjets() {
     }
 }
 
-function closeWindowProjets() {
-    let c = document.getElementById("projetsWindow");
+function closeWindowBts() {
+    let c = document.getElementById("btsWindow");
     if (c.style.display === "block") {
         c.style.display = "none";
     } else {
@@ -61,8 +81,8 @@ function closeWindowProjets() {
 
 /* Liens */
 
-function openWindowLiens() {
-    let o = document.getElementById("liensWindow");
+function openWindowEntreprise() {
+    let o = document.getElementById("entrepriseWindow");
     if (o.style.display === "none") {
         o.style.display = "block";
     } else {
@@ -70,8 +90,8 @@ function openWindowLiens() {
     }
 }
 
-function closeWindowLiens() {
-    let c = document.getElementById("liensWindow");
+function closeWindowEntreprise() {
+    let c = document.getElementById("entrepriseWindow");
     if (c.style.display === "block") {
         c.style.display = "none";
     } else {
@@ -81,8 +101,8 @@ function closeWindowLiens() {
 
 /* Contact */
 
-function openWindowContact() {
-    let o = document.getElementById("contactWindow");
+function openWindowVeille() {
+    let o = document.getElementById("veilleWindow");
     if (o.style.display === "none") {
         o.style.display = "block";
     } else {
@@ -90,8 +110,8 @@ function openWindowContact() {
     }
 }
 
-function closeWindowContact() {
-    let c = document.getElementById("contactWindow");
+function closeWindowVeille() {
+    let c = document.getElementById("veilleWindow");
     if (c.style.display === "block") {
         c.style.display = "none";
     } else {

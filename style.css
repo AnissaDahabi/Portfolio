@@ -61,7 +61,7 @@
     }
 
     #mainWindow p {
-        font-size : 1em;
+        font-size : 0.9em;
     }
 
     #mainWindow h1, p {
@@ -84,7 +84,7 @@
     }
 
     #mainButtons img {
-        width: 6.5em;
+        width: 5.5em;
     }
 
     #mainButtons img:hover {
@@ -92,10 +92,6 @@
         -ms-transform: scale(1.2);
         transform: scale(1.2);
         transition: 0.5s ease;
-    }
-
-    #mainButtons #expProImg {
-        margin-left: 1.5em;
     }
 
     /* A Propos Window */
@@ -189,9 +185,9 @@
         height: 3.5em;
     }
 
-    /* Mes Projets */
+    /* BTS SIO */
 
-    #projetsWindow {
+    #btsWindow {
         background-color: #FFF;
         height: 32em;
         width: 50em;
@@ -206,7 +202,7 @@
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 
-    #projetsWindow .header {
+    #btsWindow .header {
         background-color: #3D3A5B;
         padding-top: 0.5em;
         border-bottom: 1px solid #1B1741;
@@ -219,18 +215,18 @@
         cursor: grab;
     }
 
-    #projetsWindow .header p {
+    #btsWindow .header p {
         color: #FFF;
         margin-left: 1em;
     }
 
-    #projetsWindow .header img {
+    #btsWindow .header img {
         width: 2em;
         margin-right: 1em;
         cursor: auto;
     }
 
-    #projetsWindow #projetsMainFrame {
+    #btsWindow #btsMainFrame {
         display: flex;
         flex-wrap: wrap;
         gap: 1em;
@@ -241,51 +237,10 @@
         box-sizing: border-box;
     }
 
-    #projetsWindow #projetsMainFrame a {
-        color: #856ABD;
-        font-weight: bolder;
-    }
 
-    #projetsWindow #projetsMainFrame a:hover {
-        opacity: 0.7;
-    }
+    /* Epreuve 4 */
 
-    #projetsWindow #projetsMainFrame #projet1,
-    #projetsWindow #projetsMainFrame #projet2 {
-        flex: 1 1 45%;
-        border: solid 4px #EBE4F2;
-        border-radius: 1.5em;
-        padding: 0.5em;
-    }
-     #projetsWindow #projetsMainFrame #projet3,
-     #projetsWindow #projetsMainFrame #projet4{
-         flex: 1 1 45%;
-         border: solid 4px #EBE4F2;
-         border-radius: 1.5em;
-         padding: 0.5em;
-    }
-
-    #projetsWindow #projetsMainFrame img {
-        height: 4em;
-    }
-
-    #projetsWindow #projetsMainFrame p {
-        font-weight: normal;
-    }
-
-    #projetsWindow #phrasedefin a {
-        margin-top: 2em;
-
-    }
-
-    #projetsWindow #phrasedefin a:hover {
-        opacity: 0.7;
-    }
-
-
-    /* Expériences Professionnelles */
-
-    #expProWindow {
+    #epreuve4Window {
         background-color: #FFF;
         height: 28.5em;
         width: 50em;
@@ -300,7 +255,7 @@
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 
-    #expProWindow .header {
+    #epreuve4Window .header {
         background-color: #3D3A5B;
         padding-top: 0.5em;
         border-bottom: 1px solid #1B1741;
@@ -313,18 +268,18 @@
         cursor: grab;
     }
 
-    #expProWindow .header p {
+    #epreuve4Window .header p {
         color: #FFF;
         margin-left: 1em;
     }
 
-    #expProWindow .header img {
+    #epreuve4Window .header img {
         width: 2em;
         margin-right: 1em;
         cursor: auto;
     }
 
-    #expProWindow #expProMainFrame {
+    #epreuve4Window #epreuve4MainFrame {
         display: flex;
         flex-direction: column;
         gap: 2em;
@@ -335,37 +290,19 @@
         box-sizing: border-box;
     }
 
-    #expProWindow #expProMainFrame .content {
+    #epreuve4Window #epreuve4MainFrame .content {
         display: flex;
         align-items: flex-start;
         gap: 1.5em;
         box-sizing: border-box;
     }
 
-    #expProWindow #expProMainFrame #divCorumTxt, #divOgataTxt, #divInalcoTxt {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        overflow-wrap: break-word;
-    }
+    /* Epreuve 5 */
 
-    #expProWindow #expProMainFrame p, h3, h4, ul{
-        color: #1B1741;
-        z-index: 4;
-        margin: 0.5em 0;
-    }
-
-    #expProWindow #expProMainFrame .content img{
-        width: 8em;
-        padding: 1em;
-    }
-
-    /* Liens */
-
-    #liensWindow {
+    #epreuve5Window {
         background-color: #FFF;
-        height: 15em;
-        width: 22em;
+        height: 28.5em;
+        width: 50em;
         border: solid 1px #1B1741;
         border-radius: 1.5em;
         z-index: 3;
@@ -373,11 +310,11 @@
         box-sizing: border-box;
         display: none;
         top: 200px;
-        right: 200px;
+        left: 200px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 
-    #liensWindow .header {
+    #epreuve5Window .header {
         background-color: #3D3A5B;
         padding-top: 0.5em;
         border-bottom: 1px solid #1B1741;
@@ -390,36 +327,96 @@
         cursor: grab;
     }
 
-    #liensWindow .header p {
+    #epreuve5Window .header p {
         color: #FFF;
         margin-left: 1em;
     }
 
-    #liensWindow .header img {
+    #epreuve5Window .header img {
         width: 2em;
         margin-right: 1em;
         cursor: auto;
     }
 
-    #liensWindow #liensMainFrame {
+    #epreuve5Window #epreuve5MainFrame {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        max-width: 100%;
+        max-height: 24.5em;
+        overflow: auto;
+        padding: 1em;
+        box-sizing: border-box;
+    }
+
+    #epreuve5Window #epreuve5MainFrame .content {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.5em;
+        box-sizing: border-box;
+    }
+
+
+    /* Entreprise */
+
+    #entrepriseWindow {
+        background-color: #FFF;
+        height: 32em;
+        width: 50em;
+        border: solid 1px #1B1741;
+        border-radius: 1.5em;
+        z-index: 3;
+        position: absolute;
+        box-sizing: border-box;
+        display: none;
+        top: 200px;
+        left: 200px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    #entrepriseWindow .header {
+        background-color: #3D3A5B;
+        padding-top: 0.5em;
+        border-bottom: 1px solid #1B1741;
+        border-radius: 1.4em 1.4em 0 0;
+        height: 2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        cursor: grab;
+    }
+
+    #entrepriseWindow .header p {
+        color: #FFF;
+        margin-left: 1em;
+    }
+
+    #entrepriseWindow .header img {
+        width: 2em;
+        margin-right: 1em;
+        cursor: auto;
+    }
+
+    #entrepriseWindow #entrepriseMainFrame {
         display: flex;
         justify-content: space-between;
     }
 
-    #liensWindow #linkedin, #github {
+    #entrepriseWindow #linkedin, #github {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 2.1em;
     }
 
-    #liensWindow img {
+    #entrepriseWindow img {
         width: 4em;
     }
 
-    /* Contact */
+    /* Veille technologique */
 
-    #contactWindow {
+    #veilleWindow {
         background-color: #FFF;
         height: 24em;
         width: 46em;
@@ -434,7 +431,7 @@
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 
-    #contactWindow .header {
+    #veilleWindow .header {
         background-color: #3D3A5B;
         padding-top: 0.5em;
         border-bottom: 1px solid #1B1741;
@@ -447,18 +444,18 @@
         cursor: grab;
     }
 
-    #contactWindow .header p {
+    #veilleWindow .header p {
         color: #FFF;
         margin-left: 1em;
     }
 
-    #contactWindow .header img {
+    #veilleWindow .header img {
         width: 2em;
         margin-right: 1em;
         cursor: auto;
     }
 
-    #contactWindow #contactMainFrame p {
+    #veilleWindow #veilleMainFrame p {
         display: flex;
         margin-left: 2em;
         margin-top: 2em;
