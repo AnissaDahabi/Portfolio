@@ -1,4 +1,3 @@
-
 /* A propos */
 
 function openWindowAPropos() {
@@ -19,10 +18,10 @@ function closeWindowAPropos() {
     }
 }
 
-/* Epreuve 4 */
+/* Expériences professionnelles */
 
-function openWindowEpreuve4() {
-    let o = document.getElementById("epreuve4Window");
+function openWindowExpPro() {
+    let o = document.getElementById("expProWindow");
     if (o.style.display === "none") {
         o.style.display = "block";
     } else {
@@ -30,28 +29,8 @@ function openWindowEpreuve4() {
     }
 }
 
-function closeWindowEpreuve4() {
-    let c = document.getElementById("epreuve4Window");
-    if (c.style.display === "block") {
-        c.style.display = "none";
-    } else {
-        c.style.display = "block";
-    }
-}
-
-/* Epreuve 5 */
-
-function openWindowEpreuve5() {
-    let o = document.getElementById("epreuve5Window");
-    if (o.style.display === "none") {
-        o.style.display = "block";
-    } else {
-        o.style.display = "none";
-    }
-}
-
-function closeWindowEpreuve5() {
-    let c = document.getElementById("epreuve5Window");
+function closeWindowExpPro() {
+    let c = document.getElementById("expProWindow");
     if (c.style.display === "block") {
         c.style.display = "none";
     } else {
@@ -61,8 +40,8 @@ function closeWindowEpreuve5() {
 
 /* Mes Projets */
 
-function openWindowBts() {
-    let o = document.getElementById("btsWindow");
+function openWindowProjets() {
+    let o = document.getElementById("projetsWindow");
     if (o.style.display === "none") {
         o.style.display = "block";
     } else {
@@ -70,8 +49,8 @@ function openWindowBts() {
     }
 }
 
-function closeWindowBts() {
-    let c = document.getElementById("btsWindow");
+function closeWindowProjets() {
+    let c = document.getElementById("projetsWindow");
     if (c.style.display === "block") {
         c.style.display = "none";
     } else {
@@ -81,8 +60,8 @@ function closeWindowBts() {
 
 /* Liens */
 
-function openWindowEntreprise() {
-    let o = document.getElementById("entrepriseWindow");
+function openWindowLiens() {
+    let o = document.getElementById("liensWindow");
     if (o.style.display === "none") {
         o.style.display = "block";
     } else {
@@ -90,8 +69,8 @@ function openWindowEntreprise() {
     }
 }
 
-function closeWindowEntreprise() {
-    let c = document.getElementById("entrepriseWindow");
+function closeWindowLiens() {
+    let c = document.getElementById("liensWindow");
     if (c.style.display === "block") {
         c.style.display = "none";
     } else {
@@ -101,8 +80,8 @@ function closeWindowEntreprise() {
 
 /* Contact */
 
-function openWindowVeille() {
-    let o = document.getElementById("veilleWindow");
+function openWindowContact() {
+    let o = document.getElementById("contactWindow");
     if (o.style.display === "none") {
         o.style.display = "block";
     } else {
@@ -110,8 +89,8 @@ function openWindowVeille() {
     }
 }
 
-function closeWindowVeille() {
-    let c = document.getElementById("veilleWindow");
+function closeWindowContact() {
+    let c = document.getElementById("contactWindow");
     if (c.style.display === "block") {
         c.style.display = "none";
     } else {
