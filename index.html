@@ -27,23 +27,28 @@
       </div>
 
       <div>
-        <img onclick="openWindowProjets()" src="./images/dossier1.png" alt="Mes projets" class="button">
-        <p>Mes projets</p>
+        <img onclick="openWindowBts()" src="./images/dossier1.png" alt="BTS SIO" class="button">
+        <p>BTS SIO</p>
       </div>
 
       <div>
-        <img onclick="openWindowExpPro()" src="./images/expPro.png" alt="Expériences professionnelles" id="expProImg" class="button">
-        <p>Expériences<br>professionnelles</p>
+        <img onclick="openWindowEpreuve4()" src="./images/expPro.png" alt="Epreuve4" class="button">
+        <p>Epreuve 4</p>
       </div>
 
       <div>
-        <img onclick="openWindowLiens()" src="./images/liens.png" alt="Liens" class="button">
-        <p>Liens</p>
+        <img onclick="openWindowEpreuve5()" src="./images/expPro.png" alt="Epreuve5" class="button">
+        <p>Epreuve 5</p>
       </div>
 
       <div>
-        <img onclick="openWindowContact()" src="./images/contact.png" alt="Contact" class="button">
-        <p>Contact</p>
+        <img onclick="openWindowEntreprise()" src="./images/dossier1.png" alt="Entreprise" class="button">
+        <p>Entreprise</p>
+      </div>
+
+      <div>
+        <img onclick="openWindowVeille()" src="./images/liens.png" alt="Veille Technologique" class="button">
+        <p>Veille <br> Technologique</p>
       </div>
     </div>
   </div>
@@ -100,159 +105,104 @@
 
   </div>
 
-  <div id="projetsWindow" class="draggableWindow">
+  <div id="btsWindow" class="draggableWindow">
 
       <div class="header">
-          <p>Mes projets</p>
-          <img onclick="closeWindowProjets()" src="./images/closeButton.png" alt="Close Button" class="button">
+          <p>BTS SIO</p>
+          <img onclick="closeWindowBts()" src="./images/closeButton.png" alt="Close Button" class="button">
       </div>
 
-      <div id="projetsMainFrame" class="scrollbar1">
-          <div id="projet1">
-              <h3>Gestion de stock</h3>
-              <a href="https://github.com/Babouille404/Projet-Java-Gestion-Stock" target="_blank"> Consulter le projet </a>
-              <p>
-                  Application permettant à l'utilisateur de gérer un stock de produits en effectuant des opérations
-                  telles que l'ajout, la modification, la suppression et la consultation des produits et des fournisseurs.
-                  <br> Connectée à une base de données MySQL, elle garantit une gestion centralisée des données
-              </p>
-              <h4>Langages utilisés:</h4>
-              <img src="./images/logo/java.png" alt="JAVA">
-              <img src="./images/logo/javaswing.png" alt="JAVA SWING">
-              <img src="./images/logo/sql.png" alt="SQL">
-          </div>
+      <div id="btsMainFrame" class="scrollbar1">
 
-          <div id="projet2">
-              <h3>Jeu PacMan</h3>
-              <a href="https://github.com/AnissaDahabi/PacMan" target="_blank"> Consulter le projet </a>
-              <p>
-                  Réalisation du jeu PacMan entièrement en Java
-              </p>
-              <h4>Langages utilisés:</h4>
-              <img src="./images/logo/java.png" alt="JAVA">
-              <img src="./images/logo/javaswing.png" alt="JAVA SWING">
-          </div>
-
-          <div id="projet3">
-              <h3>Portfolio de Robbie Lens</h3>
-              <a href="https://anissadahabi.github.io/Robbie-Lens-Portfolio/" target="_blank"> Consulter le site web </a>
-              <p>
-                  Réalisation d'un site web moderne pour exposer le portfolio de la photographe Robbie Lens
-              </p>
-              <h4>Langages utilisés:</h4>
-              <img src="./images/logo/html.png" alt="HTML">
-              <img src="./images/logo/css.png" alt="CSS">
-          </div>
-
-          <div id="projet4">
-              <h3>Maquette de l'application de Gestion de stock</h3>
-              <a href="https://www.figma.com/design/7DGJhtKYLpRDPshxSO6aHs/ProjetJava?node-id=0-1&p=f&t=i39ggDroFMiPiiXs-0" target="_blank"> Consulter la maquette </a>
-              <p>
-                  Réalisation de la maquette de l'application de gestion de stock du café nommé l'Antique.
-              </p>
-              <h4>Outil utilisé:</h4>
-              <img src="./images/logo/figma.png" alt="FIGMA">
-          </div>
-
-          <div id="phrasedefin">
-              <a href="https://github.com/AnissaDahabi" target="_blank"> Consulter d'autres projets </a>
-
-          </div>
-
-      </div>
-
-
-  </div>
-
-  <div id="expProWindow" class="draggableWindow">
-      <div class="header">
-          <p>Expériences Professionnelles</p>
-          <img onclick="closeWindowExpPro()" src="./images/closeButton.png" alt="Close Button" class="button">
-      </div>
-
-      <div id="expProMainFrame"  class="scrollbar1">
-          <!-- Section Corum -->
-          <div id="divCorum" class="content">
-              <div id="divCorumImg" class="content">
-                  <img src="./images/corum.png" alt="Corum L'Epargne">
-              </div>
-              <div id="divCorumTxt">
-                  <h3>IT Support Analyst - Corum L'Epargne</h3>
-                  <h4>Septembre 2024 à Aujourd'hui</h4>
-                  <p>Missions:</p>
-                  <ul style="list-style-type: circle">
-                      <li>Développement de la page de maintenance du site internet de l’entreprise; </li> <br>
-                      <li>Résolution de tickets : trouver des solutions rapides et efficaces pour chaque collègue rencontrant des difficultés techniques; </li> <br>
-                      <li>Rédiger des rapports d’intervention afin de faire le point sur les actions menées et les résultats obtenus. </li>
-                  </ul>
-              </div>
-          </div>
-
-          <!-- Section Ogata -->
-          <div id="divOgata" class="content">
-              <div id="divOgataImg" class="content">
-                  <img src="./images/ogata.png" alt="OGATA Paris">
-              </div>
-              <div id="divOgataTxt">
-                  <h3>Réceptionniste - OGATA Paris</h3>
-                  <h4>Janvier 2024 - Avril 2024</h4>
-                  <p>Missions: </p>
-                  <ul style="list-style-type: circle">
-                      <li> Accueil des visiteurs et clients nationaux et internationaux en français, en anglais et en japonais; </li> <br>
-                      <li> Traitement des demandes de réservation adressées par mail, téléphone ou en personne; </li> <br>
-                      <li> Participation active aux réunions d'équipe pour améliorer continuellement le service offert à la clientèle et maintenir une ambiance de travail agréable. </li>
-                  </ul>
-              </div>
-          </div>
-
-          <!-- Section INALCO -->
-          <div id="divInalco" class="content">
-              <div id="divInalcoImg" class="content">
-                  <img src="./images/inalco.jpg" alt="INALCO">
-              </div>
-              <div id="divInalcoTxt">
-                  <h3>Assistante Coordinatrice de Formation - INALCO</h3>
-                  <h4>Aout 2022 - Octobre 2022</h4>
-                  <p>Missions: </p>
-                  <ul style="list-style-type: circle">
-                      <li> Suivi administratif des stagiaires; </li> <br>
-                      <li> Maitrise des logiciels informatiques d’inscription et de facturation; </li> <br>
-                      <li> Gestion des documents pédagogiques; </li> <br>
-                      <li> Répondre aux mails et appels. </li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-  </div>
-
-
-  <div id="liensWindow" class="draggableWindow">
-
-      <div class="header">
-          <p>Liens utiles</p>
-          <img onclick="closeWindowLiens()" src="./images/closeButton.png" alt="Close Button" class="button">
-      </div>
-
-      <div id="liensMainFrame">
-          <div id="linkedin">
-              <a href="https://www.linkedin.com/in/anissa-dahabi/" target="_blank"><img src="./images/linkedin.png" alt="LinkedIn"></a>
-              <p>Mon LinkedIn</p>
-          </div>
-          <div id="github">
-              <a href="https://github.com/anissadahabi" target="_blank"><img src="./images/github.png" alt="GitHub"></a>
-              <p>Mon GitHub</p>
-          </div>
       </div>
 
   </div>
 
-  <div id="contactWindow" class="draggableWindow">
+  <div id="epreuve4Window" class="draggableWindow">
+      <div class="header">
+          <p>Epreuve 4</p>
+          <img onclick="closeWindowEpreuve4()" src="./images/closeButton.png" alt="Close Button" class="button">
+      </div>
+
+      <div id="epreuve4MainFrame"  class="scrollbar1">
+          <h2>Objectif</h2>
+          <p> Cette épreuve vise à évaluer chez la personne candidate l’acquisition des compétences décrites dans le
+              bloc de compétences « Support et mise à disposition de services informatiques », à savoir : </p>
+          <ul>
+              <li>Gérer le patrimoine informatique</li>
+              <li>Répondre aux incidents et demandes d'assistance et d'évolution</li>
+              <li>Développer la présence en ligne de l'organisation</li>
+              <li>Travailler en mode projet</li>
+              <li>Mettre à disposition des utilisateurs un service informatique</li>
+              <li>Organiser son développement personnel</li>
+          </ul>
+
+          <h2>Modalités d'évaluation</h2>
+          <p>L’épreuve comporte deux phases consécutives.
+              Pendant 10 minutes (maximum) la personne candidate présente son parcours de professionnalisation et
+              justifie les modalités d’acquisition des compétences du bloc « Support et mise à disposition de services
+              informatiques ». <br><br>
+              S’en suit 30 minutes d’échange avec le jury qui permettent, d’une part, d’expliciter et d’apprécier le
+              parcours de professionnalisation et, d’autre part, d’approfondir une ou plusieurs réalisations décrites
+              dans le dossier numérique. <br><br>
+              L’entretien permet d’apprécier la capacité de la personne candidate à mobiliser les compétences visées,
+              sa capacité à rendre compte d’un travail réalisé au sein d’une équipe projet en mettant clairement en
+              évidence sa contribution personnelle.</p>
+
+      </div>
+  </div>
+
+  <div id="epreuve5Window" class="draggableWindow">
+      <div class="header">
+          <p>Epreuve 5</p>
+          <img onclick="closeWindowEpreuve5()" src="./images/closeButton.png" alt="Close Button" class="button">
+      </div>
+
+      <div id="epreuve5MainFrame"  class="scrollbar1">
+          <h2>Epreuve 5 | Option Solutions logicielles et applications métiers</h2>
+
+      </div>
+  </div>
+
+
+  <div id="entrepriseWindow" class="draggableWindow">
 
       <div class="header">
-          <p>Contact</p>
-          <img onclick="closeWindowContact()" src="./images/closeButton.png" alt="Close Button" class="button">
+          <p>Entreprise</p>
+          <img onclick="closeWindowEntreprise()" src="./images/closeButton.png" alt="Close Button" class="button">
       </div>
-      <div id="contactMainFrame">
+
+      <div id="entrepriseMainFrame" class="scrollbar1">
+          <h2>Corum L'Epargne</h2>
+
+          <p>Notre groupe, plus connu en France sous la marque Corum l’Epargne, est spécialisé dans la gestion et la commercialisation
+              de solutions d’épargne long terme, incluant des produits de placement immobiliers (SCPI), de financement d’entreprises
+              (fonds obligataires) ainsi qu’un contrat d’assurance vie proposé par notre compagnie d’assurance Corum Life. Le Groupe
+              réalise un chiffre d’affaires de plus de 200 millions d’euros.
+
+              Depuis notre création en 2011, nous avons connu une croissance soutenue en mettant le client au cœur de toutes nos préoccupations.
+              Nous nous appuyons sur nos valeurs qui sont l’engagement, l’accessibilité et la transparence. Nous mettons tout en œuvre pour
+              proposer des offres performantes adaptées aux épargnants, acteur audacieux et précurseur, reconnu comme tel par le marché.
+
+              Au-delà de ses domaines d’expertise, Corum l’Epargne est également engagée dans la culture afin de promouvoir ses valeurs de
+              performance et d’innovation, et de contribuer au développement des savoir-faire. Nous sommes devenus en 2023 grand partenaire
+              du Festival d’opéra d’Aix-en-Provence pour 3 ans ; un évènement qui, tout en étant l’un des plus anciens festivals d’art lyrique
+              au monde, participe avec audace à changer le regard sur son domaine. Nous travaillons également au soutien de sportifs en les
+              accompagnant dans leur quête de performance, à l’image de ce que nous faisons pour nos clients au quotidien. Ces athlètes sont des
+              femmes et des hommes d’ambition, audacieux et qui s’investissent pour réussir. Judokate, tennisman, pilote, coureur de l’extrême,
+              escrimeuse, para-grimpeuse, … des athlètes d’horizons très différents, mais dont les valeurs nous rassemblent.</p>
+
+      </div>
+
+  </div>
+
+  <div id="veilleWindow" class="draggableWindow">
+
+      <div class="header">
+          <p>Veille technologique</p>
+          <img onclick="closeWindowVeille()" src="./images/closeButton.png" alt="Close Button" class="button">
+      </div>
+      <div id="veilleMainFrame">
           <p> À venir :)</p>
       </div>
 
