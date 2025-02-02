@@ -1,0 +1,29 @@
+
+:root {
+    background-color: #FAF7F0;
+    color: #314931;
+    font-family: 'Neuton', serif;
+    font-weight: 800;
+}
+
+body {
+    background-color: #FAF7F0;
+    color: #314931;
+    font-family: 'Neuton', serif;
+}
+
+section {
+    background-color: #CBE0C8;
+}
+
+#competences {
+    background-color: #FAF7F0;
+}
+
+#projets {
+    background-color: #FAF7F0;
+}
+
+#gestion {
+    background-color: #D8E2DC;
+}
