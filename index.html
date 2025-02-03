@@ -9,41 +9,45 @@
   <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-<section class="sides">
-  <p>A propos</p>
+<section id="left">
+  <p id="aproposTitle">A propos</p>
   <div id="apropos">
-    <img src="./images/miffy.png" alt="Pfp">
-    <p>Anissa Dahabi</p>
-    <p>Développeuse</p>
+    <img src="./assets/miffy.png" alt="Pfp" id="miffy">
+    <p id="description">Anissa Dahabi<br>Développeuse</p>
+    <br>
     <p>A la recherche d’une alternance de 12 mois en tant que développeuse, à compter de Janvier 2025!</p>
+    <br>
     <div id="location">
-      <img src="./images/location.png" alt="Icone location">
+      <img src="./assets/location.png" alt="Icone location">
       <p>Basée à Paris</p>
     </div>
     <div id="mail">
-      <img src="./images/mail.png alt="Icone mail">
+      <img src="./assets/mail.png" alt="Icone mail">
       <p>anissa.dahabi@gmail.com</p>
     </div>
   </div>
 </section>
-    
-<div id="navBar">
-  <a>Compétences</a>
-  <a>Projets</a>
-  <a>Formation</a>
-  <a>Expériences professionnelles</a>
-</div>
 
 <main>
-  <section>
-  <h1>Bienvenue sur mon portfolio!</h1>
-  <p>Étudiante en BTS SIO, je suis toujours enthousiaste à l'idée d'apprendre de nouvelles choses. Motivée par l'idée
+  <div id="navBar">
+    <a>Compétences</a>
+    <a>Projets</a>
+    <a>Formation</a>
+    <a>Expériences professionnelles</a>
+  </div>
+
+  <section id="main" class="scrollbar1">
+  <h1 id="bienvenue">Bienvenue sur mon portfolio!</h1>
+  <div id="txt">
+    <p>Étudiante en BTS SIO, je suis toujours enthousiaste à l'idée d'apprendre de nouvelles choses. Motivée par l'idée
     de concevoir des solutions qui facilitent le quotidien des utilisateurs, mon objectif est d'appliquer mes compétences
     acquises lors de ma formation dans un cadre professionnel et de continuer à me perfectionner dans le domaine du
     développement informatique, notamment en Java!</p>
-
+  </div>
+    <br>
     <div id="competences">
-      <h1>Compétences</h1>
+      <h1>COMPETENCES</h1>
+      <div id="front">
       <h2>Front-end:</h2>
         <ul>
           <li>HTML</li>
@@ -51,22 +55,30 @@
           <li>Javascript</li>
           <li>React</li>
         </ul>
+      </div>
+      <div id="back">
       <h2>Back-end:</h2>
         <ul>
           <li>Java</li>
           <li>Python</li>
           <li>PHP</li>
         </ul>
+      </div>
+      <div id="data">
       <h2>DataBases:</h2>
         <ul>
           <li>SQL</li>
         </ul>
+      </div>
+      <div id="edition">
       <h2>Logiciels d'édition et de design</h2>
         <ul>
           <li>Figma</li>
           <li>Procreate</li>
           <li>Blender</li>
         </ul>
+      </div>
+      <div id="autres">
       <h2>Autres:</h2>
         <ul>
           <li>Git et GitHub</li>
@@ -75,13 +87,16 @@
           <li>Microsoft Azure</li>
           <li>Linux</li>
         </ul>
+      </div>
     </div>
-
+    <br>
     <div id="projets">
-      <h1>Projets</h1>
+      <h1>PROJETS</h1>
+      <div id="projetsNav">
       <a>Gestion de stock</a>
       <a>Jeu PacMan</a>
       <a>Portfolio Robbie Lens</a>
+      </div>
         <div id="gestion">
           <h2>Gestion de stock</h2>
           <p>Ce projet est une application de gestion de stock de café, permettant d'effectuer des opérations CRUD 
@@ -95,13 +110,14 @@
             <li>Générer des rapports sur l'état du stock et des ventes</li>
           </ul>
           <div id="phoneImg">
-            <img src="./images/phone1.png" alt="Screenshot Edit 1">
-            <img src="./images/phone2.png" alt="Screenshot Edit 2">
+            <img src="./assets/edit1.png" alt="Screenshot Edit 1">
+            <img src="./assets/edit2.png" alt="Screenshot Edit 2">
           </div>
           <h2>Stack utilisée:</h2>
           <p>L'application est développée en Java, utilisant JavaFX pour l'interface graphique et une base de données SQL</p>
           <a href="https://github.com/AnissaDahabi/GestionDeStock" target="_blank">Consulter le projet sur GitHub</a>
         </div>
+        <br>
         <div id="pacman">
           <h2>Jeu PacMan</h2>
           <p>Développement d’un clône du jeu Pacman</p>
@@ -116,11 +132,12 @@
           <h2>Stack utilisée:</h2>
           <p>Ce jeu a été développé en Java et Java Swing</p>
           <div id="pacmanImg">
-            <img src="./images/pacman.png alt="Screenshot PacMan">
+            <img src="./assets/gameScreenshot.png" alt="Screenshot PacMan">
           </div>
           <a href="https://github.com/AnissaDahabi/PacMan" target="_blank">Consulter le projet sur GitHub</a>
         </div>
-        <div>
+        <br>
+        <div id="robbie">
         <h2>Portfolio de Robbie Lens</h2>
           <p>Réalisation du site professionnel d’un personnage fictif : Robbie Lens, photographe freelance</p>
           <h2>Stack utilisée:</h2>
@@ -129,9 +146,9 @@
         </div>
       <a href="https://github.com/AnissaDahabi?tab=repositories" target="_blank">Consulter mes autres projets</a>
     </div>
-
+    <br>
     <div id="formation">
-      <h1>Formation</h1>
+      <h1>FORMATION</h1>
       <h2>BTS SIO (Services Informatiques aux Organisations)</h2>
       <h2>2024 - 2026</h2>
       <h3>Option SLAM, Solutions Logicielles et Applications Métiers</h3>
@@ -145,9 +162,9 @@
       <h2>2019 - 2022</h2>
       <h3>Spécialisation en Art et Littérature du Japon</h3>
     </div>
-
+    <br>
     <div id="experiences">
-      <h1>Expériences professionnelles</h1>
+      <h1>EXPERIENCES PROFESSIONNELLES</h1>
       <div id="corum">
         <h2>IT Support Analyst - Corum L’Epargne</h2>
         <h2>09/2024 - Aujourd’hui</h2>
@@ -158,6 +175,7 @@
           <li>Rédiger des rapports d’intervention afin de faire le point sur les actions menées et les résultats obtenus</li>
         </ul>
       </div>
+      <br>
       <div id="ogata">
         <h2>Réceptionniste - OGATA Paris</h2>
         <h2>01/2024 - 04/2024</h2>
@@ -167,6 +185,7 @@
           <li>Traitement des demandes de réservation adressées par mail, téléphone ou en personne</li>
         </ul>
       </div>
+      <br>
       <div id="inalco">
         <h2>Assistante coordinatrice de formation - INALCO</h2>
         <h2>08/2022 - 11/2022</h2>
@@ -182,17 +201,21 @@
   </section>
 </main>
 
-<section class="sides">
-  <p>Liens</p>
+<section id="right">
+  <p id="linkTitle">Liens</p>
   <div id="liens">
-    <a href="https://www.linkedin.com/feed/" target="_blank"><img src="./images/linkedin.png" alt="LinkedIn"></a>
-    <p>LinkedIn</p>
-    <a href="https://github.com/AnissaDahabi" target="_blank"><img src="./images/github.png" alt="GitHub"></a>
+    <a href="https://github.com/AnissaDahabi" target="_blank"><img src="./assets/github.png" alt="GitHub" id="github"></a>
     <p>GitHub</p>
-    <a href="./assets/cv.pdf" target="blank"><img src="./images/cv.png" alt="CV"></a>
+    <a href="https://www.linkedin.com/feed/" target="_blank"><img src="./assets/linkedin.png" alt="LinkedIn"></a>
+    <p>LinkedIn</p>
+    <a href="./assets/CV.pdf" target="blank"><img src="./assets/cv.png" alt="CV"></a>
     <p>Mon CV</p>
   </div>
 </section>
-
+<footer>
+  <br>
+  <br>
+  <br>
+</footer>
 </body>
 </html>

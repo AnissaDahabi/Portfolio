@@ -7,23 +7,321 @@
 }
 
 body {
-    background-color: #FAF7F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF8E9;
     color: #314931;
     font-family: 'Neuton', serif;
+    max-height: calc(100vh - 4em);
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 50px;
+    min-height: 100vh;
 }
 
-section {
+#left, #main, #right {
+    flex: 1;
+}
+
+/* LEFT-SIDE FRAME */
+
+#left {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#left #aproposTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+#apropos, #liens {
+    background-color: #D8E2DC;
+}
+
+#apropos {
+    width: 10em;
+    height: auto;
+    border-radius: 1em;
+    display: grid;
+    justify-content: center;
+    padding: 1em;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#apropos #miffy {
+    height: 9em;
+    padding: 2em;
+    justify-content: center;
+}
+
+#description {
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+#apropos p {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: -0.5em;
+}
+
+#apropos #location {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 1em;
+}
+
+#apropos #location img {
+    height: 1.3em;
+    width: 1em;
+    margin-top: -1em;
+    margin-right: -0.5em;
+}
+
+#apropos #location p {
+    font-size: 0.9em;
+    margin-left: 0.2em;
+}
+
+#apropos #mail {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#apropos #mail img {
+    height: 0.9em;
+    width: 1.2em;
+    margin-top: -1em;
+    margin-right: -0.5em;
+}
+
+#apropos #mail p {
+    font-size: 0.9em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+/* MAIN FRAME */
+
+#main {
+    width: 55em;
+    margin: 0 auto;
+    justify-content: center;
+    position: relative;
+    height: calc(100vh - 3.5em);
+    overflow-y: auto;
+    border-radius: 1em;
     background-color: #CBE0C8;
+    z-index: 1;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    flex: 1;
 }
 
-#competences {
-    background-color: #FAF7F0;
+
+#navBar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    max-width: 60em;
+    margin: 1em auto;
+
+    z-index: 10;
 }
 
-#projets {
+#bienvenue {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: 800;
+    padding: 1em;
+}
+
+#txt {
     background-color: #FAF7F0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border-radius: 1em;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#competences, #formation, #projets, #experiences {
+    background-color: #FAF7F0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border-radius: 1em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: 800;
+    margin: 0em;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+/* COMPETENCES */
+
+#competences div{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    min-height: 100px;
+}
+#front, #back, #data, #edition, #autres {
+    background-color: #D8E2DC;
+    border-radius: 1em;
+    color: #314931;
+}
+
+
+/* PROJETS */
+
+#projetsNav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    font-size: 1.2em;
+    padding: 1em;
 }
 
 #gestion {
     background-color: #D8E2DC;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+#gestion img {
+    height: 20em;
+    width:10em;
+}
+
+#pacman {
+    background-color: #D8E2DC;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+#pacman img {
+    height: 20em;
+}
+
+#robbie {
+    background-color: #D8E2DC;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+/* FORMATION */
+
+
+
+/* EXPERIENCES PROFESSIONNELLES */
+
+#experiences {
+    overflow-y: auto;
+}
+
+/* RIGHT SIDE */
+
+#right {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#right #linkTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+#liens {
+    width: 7.5em;
+    height: auto;
+    border-radius: 1em;
+    display: grid;
+    justify-content: center;
+    padding: 1em;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#liens #github {
+    height: 3.5em;
+}
+
+#liens img {
+    height: 3em;
+    display: grid;
+    justify-content: center;
+}
+
+footer {
+    height: 50px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+/*       ScrollBar 1        */
+
+.scrollbar {
+    height: 300px;
+    width: 50%;
+    overflow: auto;
+    padding: 0 10px;
+}
+
+.scrollbar1::-webkit-scrollbar {
+    width: 16px;
+}
+
+.scrollbar1::-webkit-scrollbar-track {
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 8px;
+    background-color: #e7e7e7;
+    border: 1px solid #cacaca;
+}
+
+.scrollbar1::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+    background-color: #789D78;
 }
