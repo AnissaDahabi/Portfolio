@@ -8,7 +8,7 @@
 
 body {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #FFF8E9;
     color: #314931;
@@ -118,11 +118,12 @@ body {
 /* MAIN FRAME */
 
 #main {
+    max-width: 1900px;
     width: 55em;
     margin: 0 auto;
     justify-content: center;
     position: relative;
-    height: calc(100vh - 3.5em);
+    height: 90vh;
     overflow-y: auto;
     border-radius: 1em;
     background-color: #CBE0C8;
@@ -141,15 +142,14 @@ body {
     max-width: 60em;
     margin: 1em auto;
 
-    z-index: 10;
 }
 
 #bienvenue {
     display: flex;
     justify-content: center;
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: 800;
-    padding: 1em;
+    padding: 0.5em;
 }
 
 #txt {
@@ -195,18 +195,30 @@ h3 {
 
 /* COMPETENCES */
 
-#competences div{
+#competencesTitre {
+    padding: 0.5em;
+    margin-top: -0.5em;
+}
+
+#competencesFrame {
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
-    min-height: 100px;
 }
 #front, #back, #data, #edition, #autres {
+    height: 10em;
+    width: 15em;
+    display: grid;
     background-color: #D8E2DC;
     border-radius: 1em;
     color: #314931;
+}
+
+#competencesFrame h2 {
+    font-size: 1.3em;
+    text-align: center;
 }
 
 
@@ -284,6 +296,7 @@ h3 {
 
 #liens #github {
     height: 3.5em;
+    padding-top: 1em;
 }
 
 #liens img {
@@ -292,13 +305,9 @@ h3 {
     justify-content: center;
 }
 
-footer {
-    height: 50px;
-    background-color: #f0f0f0;
-    text-align: center;
-}
 
-/*       ScrollBar 1        */
+
+/* ScrollBar 1  */
 
 .scrollbar {
     height: 300px;
