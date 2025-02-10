@@ -212,7 +212,7 @@ h3 {
 
 #competencesFrame {
     display: grid;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -391,14 +391,19 @@ h3 {
     display: grid;
     justify-content: center;
     align-items: center;
+    padding-top: 1.5em;
 }
 
-#liens p {
+#liens a {
     color: #314931;
     text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 0.5em;
 }
 
-#liens p:hover {
+#liens a:hover {
     color: #789D78;
 }
 
