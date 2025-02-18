@@ -55,6 +55,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-left: 0.25em;
+    border-radius: 40em;
 }
 
 #description {
